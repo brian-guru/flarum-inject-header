@@ -7,13 +7,13 @@ A [Flarum](http://flarum.org) extension. A back to top button.
 Install with composer:
 
 ```sh
-composer require brian/flarum-inject-header:"*"
+composer require briantran/flarum-inject-header:"*"
 ```
 
 ## Updating
 
 ```sh
-composer update brian/flarum-inject-header:"*"
+composer update briantran/flarum-inject-header:"*"
 php flarum migrate
 php flarum cache:clear
 ```
