@@ -1,18 +1,18 @@
 import app from 'flarum/admin/app';
 import ExtensionPage from 'flarum/admin/components/ExtensionPage';
 
-const settingsPrefix = 'brian-inject-header.';
+const settingsPrefix = 'briantran-inject-header.';
 
 export default class JsSettingsPage extends ExtensionPage {
   content() {
     return [
       m('.container', [
         m('.JsSettingsPage', [
-          m('h3', app.translator.trans('brian-inject-header.admin.popup.section.injectHeader')),
+          m('h3', app.translator.trans('briantran-inject-header.admin.inject_header_label')),
           m('.Form-group', [
-            m('label', app.translator.trans('brian-inject-header.admin.popup.field.jsCode')),
+            m('label', app.translator.trans('briantran-inject-header.admin.js_code')),
                 m('input.FormControl', {
-                  bidi: this.setting(settingsPrefix + 'jsCode'),
+                  bidi: this.setting(settingsPrefix + 'js_code'),
                   placeholder: 'Copy and paste the js code here',
                 }),
           ]),

@@ -31,7 +31,7 @@ class AddBlockJs
 
     private function injectJs(Document $document)
     {
-        $jsCode = $this->settings->get('brian-inject-header.jsCode');
+        $jsCode = $this->settings->get('briantran-inject-header.js_code');
         if ($jsCode) {
             // Add script has been configured.
             $document->head[] = $jsCode;

@@ -1,7 +1,4 @@
-brian-inject-adsense:
+briantran-inject-header:
     admin:
-        popup:
-            section:
-                injectHeader: Inject Script To The Site Header
-            field:
-                jsCode: Script content
+        inject_header_label: Inject Script To The Site Header
+        js_code: Script content
