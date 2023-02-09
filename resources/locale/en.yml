@@ -1,0 +1,7 @@
+brian-inject-adsense:
+    admin:
+        popup:
+            section:
+                injectHeader: Inject Script To The Site Header
+            field:
+                jsCode: Script content
