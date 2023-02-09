@@ -1,9 +1,9 @@
 <?php
 
 /*
- * This file is part of brian-brss/flarum-inject-adsense.
+ * This file is part of brian-brss/flarum-inject-header.
  *
- * Copyright (c) 2022 Brian Tran.
+ * Copyright (c) 2022 Guru Consulting Ltd.
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.

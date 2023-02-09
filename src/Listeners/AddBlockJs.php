@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of brian/inject-adsense.
+ * This file is part of brian/flarum-inject-header.
  *
  * Copyright (c) Guru Consulting.
  *

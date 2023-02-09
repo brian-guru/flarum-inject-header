@@ -1,5 +1,5 @@
 {
-    "name": "brian/inject-header",
+    "name": "brian/flarum-inject-header",
     "description": "Inject script to the header tag",
     "keywords": [
         "flarum"
