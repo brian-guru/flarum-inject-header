@@ -13,9 +13,6 @@ namespace Brian\InjectHeader\Listeners;
 
 use Flarum\Frontend\Document;
 use Flarum\Settings\SettingsRepositoryInterface;
-use Flarum\User\Guest;
-use FoF\Analytics\Piwik\PaqPushList;
-use Illuminate\Support\Str;
 use Psr\Http\Message\ServerRequestInterface;
 
 class AddBlockJs
