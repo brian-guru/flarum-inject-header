@@ -1,24 +1,44 @@
 import app from 'flarum/admin/app';
 import ExtensionPage from 'flarum/admin/components/ExtensionPage';
+import ItemList from 'flarum/common/utils/ItemList';
 
-const settingsPrefix = 'briantran-inject-header.';
 
 export default class JsSettingsPage extends ExtensionPage {
+  oninit(vnode) {
+    super.oninit(vnode);
+    this.setting = this.setting.bind(this);
+  }
   content() {
     return [
-      m('.container', [
-        m('.JsSettingsPage', [
-          m('h3', app.translator.trans('briantran-inject-header.admin.inject_header_label')),
-          m('.Form-group', [
-            m('label', app.translator.trans('briantran-inject-header.admin.js_code')),
-                m('input.FormControl', {
-                  bidi: this.setting(settingsPrefix + 'js_code'),
-                  placeholder: 'Copy and paste the js code here',
-                }),
-          ]),
-          this.submitButton(),
-        ]),
-      ]),
+      <div className="container">
+          <div className="Form">{this.settingsItems().toArray()}</div>
+      </div>,
     ];
+  }
+
+  settingsItems() {
+    const items = new ItemList();
+
+    items.add('settings-fields', <div className="Form-group">{this.settingsFields().toArray()}</div>, 100);
+
+    items.add('submit', this.submitButton(), 0);
+
+    return items;
+  }
+
+  settingsFields() {
+    const items = new ItemList();
+
+    items.add('inject_header_label', <h2>{app.translator.trans('briantran-inject-header.admin.inject_header_label')}</h2>, 110);
+
+    items.add(
+      'js_code',
+      <div className="Form-group">
+        <label>{app.translator.trans('briantran-inject-header.admin.js_code')}</label>
+        <textarea required className="FormControl" bidi={this.setting('briantran-inject-header.js_code')} />
+      </div>,
+      100
+    );
+    return items;
   }
 }
