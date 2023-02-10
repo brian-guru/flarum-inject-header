@@ -14,7 +14,6 @@ composer require briantran/flarum-inject-header:"*"
 
 ```sh
 composer update briantran/flarum-inject-header:"*"
-php flarum migrate
 php flarum cache:clear
 ```
 
