@@ -17,8 +17,8 @@
         }
     ],
     "support": {
-        "issues": "https://bientran.me",
-        "source": "https://bientran.me",
+        "issues": "https://github.com/brian-guru/flarum-inject-header/issues",
+        "source": "https://github.com/brian-guru/flarum-inject-header",
         "forum": "https://discuss.flarum.org"
     },
     "homepage": "https://bientran.me",
@@ -35,10 +35,10 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "Inject Head Tag",
+            "title": "Inject Header Tag",
             "category": "features",
             "icon": {
-                "name": "fas fa-arrow-up",
+                "name": "fa fa-code",
                 "backgroundColor": "#ddd",
                 "color": "#000"
             }
